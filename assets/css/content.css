@@ -1,0 +1,116 @@
+@keyframes test {
+	from {
+		background: yellow;
+	}
+	to {
+		background: orange;
+	}
+}
+
+@keyframes test1 {
+	0% {
+		background: yellow;
+	}
+	5% {
+		background: orange;
+		width: 100px;
+	}
+
+	10% {
+		background: blueviolet;
+		width: 200px;
+	}
+
+	30% {
+		background: violet;
+		width: 300px;
+	}
+
+	70% {
+		background: rosybrown;
+		width: 400px;
+	}
+}
+
+div.image {
+	width: 350px;
+	height: 200px;
+	background-color: gray;
+	/*IMAGE*/
+	background-image: url('../img/geometric.png');
+	background-repeat: repeat;
+	background-size: 50px 50px;
+	/*background-position: center;*/
+
+}
+
+div.gradient {
+	width: 550px;
+	height: 250px;
+	background: linear-gradient(90deg, rgba(8,242,86,1) 0%, rgba(35,189,8,1) 43%, rgba(13,166,133,1) 70%, rgba(0,212,255,1) 100%);
+}
+
+div.gradient1 {
+	width: 550px;
+	height: 250px;
+	background: radial-gradient(circle, rgba(8,242,86,1) 0%, rgba(35,189,8,1) 43%, rgba(13,166,133,1) 62%, rgba(0,212,255,1) 100%);
+}
+
+/*ANIMATION*/
+/*A*/
+div.animation {
+	background: red;
+	width: 150px;
+	height: 150px;
+
+	/*transition: 0.3s;*/
+	/*transition-property: width;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;*/
+	/*transition: width 1s ease, backgraund width 10s ease;;
+
+	transition: 3s;*/
+}
+/*B*/
+div.animation:hover {
+	background: green;
+	width: 600px;
+}
+
+/*Keyframes*/
+div.animation-keyframes {
+	background: blue;
+	width: 300px;
+	height: 300px;
+
+	animation-name: test;
+	animation-duration: 3s;
+	animation-timing-function: ease;
+
+	animation-iteration-count: infinite;
+	/*animation-iteration-count: infinite; това е за постоянно повтаряне*/
+
+	animation-fill-mode:forwards;
+	/*animation-fill-mode:forwards; тук остава вторият цвят*/
+
+}
+
+div.animation-keyframes1 {
+	background: blue;
+	width: 200px;
+	height: 200px;
+
+	animation-name: test1;
+	animation-duration: 5s;
+	animation-timing-function: ease;
+
+	animation-iteration-count: infinite;
+	/*animation-iteration-count: infinite; това е за постоянно повтаряне*/
+	animation-delay: 3s;
+	/*animation-delay: 3s; времето в което стартира анимацията или по точно отложен старт*/
+	animation-direction: reverse;
+	/*animation-direction: reverse; анимацията тръгва на обратно*/
+	animation-direction: alternate-reverse;
+
+	/*animation-direction: alternate-reverse; започва от начало и като стигне до края почва пак към началото */
+}
