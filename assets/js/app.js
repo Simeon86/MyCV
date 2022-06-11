@@ -10,7 +10,7 @@ var arr = [
 				avatar: './assets/img/Me.jpg',
 				description: '',
 				experience: 'Advance Academy - from September 2021 to the present',
-				study: 'HTML, CSS, Javascript, Node.js',
+				study: 'HTML, CSS, Javascript, Node.js, React', 
 				currently: 'I am currently studying React',
 				previous: 'I have previous experience outside the IT sector',
 			}
