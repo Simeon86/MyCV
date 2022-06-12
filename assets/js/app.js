@@ -11,7 +11,7 @@ var arr = [
 				description: '',
 				experience: 'Advance Academy - from September 2021 to the present',
 				study: 'HTML, CSS, Javascript, Node.js, React', 
-				currently: 'I am currently studying React',
+				currently: 'I am currently studying GitHub',
 				previous: 'I have previous experience outside the IT sector',
 			}
 		];
